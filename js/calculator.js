@@ -16,4 +16,8 @@
     var btnCalculate = $('calculate');
     var btnNumbers = {};
 
+    for (var i = 0; i <= 9; i++) {
+        btnNumbers[i] = $('num-' + i);
+    }
+
 })(document);
