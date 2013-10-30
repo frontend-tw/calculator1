@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>簡易計算機</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/calculator.css">
 </head>
@@ -13,34 +13,34 @@
         <div id="keyboard">
             <table>
                 <tr>
-                    <td><button class="btn">MC</button></td>
-                    <td><button class="btn">M+</button></td>
-                    <td><button class="btn">M-</button></td>
-                    <td><button class="btn">MR</button></td>
+                    <td><button id="mem-clear" class="btn">MC</button></td>
+                    <td><button id="mem-add" class="btn">M+</button></td>
+                    <td><button id="mem-sub" class="btn">M-</button></td>
+                    <td><button id="mem-remember" class="btn">MR</button></td>
                 </tr>
                 <tr>
-                    <td><button class="btn">C</button></td>
-                    <td><button class="btn">±</button></td>
-                    <td><button class="btn">÷</button></td>
-                    <td><button class="btn">×</button></td>
+                    <td><button id="clear" class="btn">C</button></td>
+                    <td><button id="sign" class="btn">±</button></td>
+                    <td><button id="math-div" class="btn">÷</button></td>
+                    <td><button id="math-mul" class="btn">×</button></td>
                 </tr>
                 <tr>
-                    <td><button class="btn">7</button></td>
-                    <td><button class="btn">8</button></td>
-                    <td><button class="btn">9</button></td>
-                    <td><button class="btn">-</button></td>
+                    <td><button id="num-7" class="btn">7</button></td>
+                    <td><button id="num-8" class="btn">8</button></td>
+                    <td><button id="num-9" class="btn">9</button></td>
+                    <td><button id="math-sub" class="btn">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="btn">4</button></td>
-                    <td><button class="btn">5</button></td>
-                    <td><button class="btn">6</button></td>
-                    <td><button class="btn">+</button></td>
+                    <td><button id="num-4" class="btn">4</button></td>
+                    <td><button id="num-5" class="btn">5</button></td>
+                    <td><button id="num-6" class="btn">6</button></td>
+                    <td><button id="math-add" class="btn">+</button></td>
                 </tr>
                 <tr>
-                    <td><button class="btn">1</button></td>
-                    <td><button class="btn">2</button></td>
-                    <td><button class="btn">3</button></td>
-                    <td rowspan="2"><button class="btn btn-tall">=</button></td>
+                    <td><button id="num-1" class="btn">1</button></td>
+                    <td><button id="num-2" class="btn">2</button></td>
+                    <td><button id="num-3" class="btn">3</button></td>
+                    <td rowspan="2"><button id="calulate" class="btn btn-tall">=</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="btn btn-wide">0</button></td>
