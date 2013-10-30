@@ -14,6 +14,7 @@
     var btnMathDiv = $('math-div');
     var btnMathMul = $('math-mul');
     var btnCalculate = $('calculate');
+    var btnDot = $('dot');
     var btnNumbers = {};
 
     for (var i = 0; i <= 9; i++) {
