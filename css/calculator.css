@@ -2,7 +2,7 @@ body {
     margin: 10px auto;
 }
 
-#calculator {
+.calculator {
     margin: 0 auto;
     border: 5px solid #666;
     background: #ccc;
