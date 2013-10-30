@@ -20,4 +20,9 @@
         btnNumbers[i] = $('num-' + i);
     }
 
+    for (var i = 0; i <= 9; i++) {
+        btnNumbers[i].onclick = function () {
+            screen.innerHTML = this.innerHTML + screen.innerHTML;
+        }
+    }
 })(document);
