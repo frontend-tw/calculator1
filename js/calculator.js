@@ -22,7 +22,10 @@
 
     for (var i = 0; i <= 9; i++) {
         btnNumbers[i].onclick = function () {
-            screen.innerHTML = this.innerHTML + screen.innerHTML;
+            if (screen.innerHTML === '0') {
+                screen.innerHTML = '';
+            }
+            screen.innerHTML += this.innerHTML;
         }
     }
 })(document);
