@@ -74,11 +74,30 @@
         btnClear.onclick();
     };
 
+    // 減法
+    var btnMathSub = $('math-sub');
+    btnMathSub.onclick = function () {
+        num1 = parseInt(screen.innerHTML, 10);
+        mathOp = '-';
+        btnClear.onclick();
+    };
+
     // 等於
     var btnCalculate = $('calculate');
     btnCalculate.onclick = function () {
         var num2 = parseInt(screen.innerHTML, 10);
-        screen.innerHTML = num1 + num2;
+
+        switch (mathOp) {
+            case '+':
+                screen.innerHTML = num1 + num2;
+                break;
+            case '-':
+                screen.innerHTML = num1 - num2;
+                break;
+            default:
+                break;
+        }
+        
     }
 
 })(document);
