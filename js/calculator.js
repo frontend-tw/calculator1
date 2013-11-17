@@ -37,6 +37,8 @@
     var btnClear = $('clear');
     btnClear.onclick = function () {
         screen.innerHTML = '0';
+        dotMode = false;
+        hasDot = false;
     };
 
     // 正負號
