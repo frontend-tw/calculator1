@@ -74,4 +74,11 @@
         btnClear.onclick();
     };
 
+    // 等於
+    var btnCalculate = $('calculate');
+    btnCalculate.onclick = function () {
+        var num2 = parseInt(screen.innerHTML, 10);
+        screen.innerHTML = num1 + num2;
+    }
+
 })(document);
