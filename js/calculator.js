@@ -1,5 +1,5 @@
 (function (d) {
-    var dotMode = true;
+    var dotMode = false;
 
     var $ = function (id) {
         return d.getElementById(id);
