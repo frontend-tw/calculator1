@@ -1,5 +1,6 @@
 (function (d) {
     var dotMode = false;
+    var hasDot = false;
 
     var $ = function (id) {
         return d.getElementById(id);
@@ -55,7 +56,10 @@
     // 小數點
     var btnDot = $('dot');
     btnDot.onclick = function () {
-        dotMode = true;
+        if (!hasDot) {
+            dotMode = true;
+        }
+        hasDot = true;
     };
 
 })(document);
