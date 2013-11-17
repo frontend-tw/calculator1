@@ -1,4 +1,6 @@
 (function (d) {
+    var dotMode = true;
+
     var $ = function (id) {
         return d.getElementById(id);
     }
@@ -16,8 +18,15 @@
     for (var i = 0; i <= 9; i++) {
         btnNumbers[i].onclick = function () {
             if (screen.innerHTML === '0') {
-                screen.innerHTML = '';
+                if (!dotMode) {
+                    screen.innerHTML = '';
+                }
             }
+
+            if (dotMode) {
+                screen.innerHTML += '.';
+            }
+            
             screen.innerHTML += this.innerHTML;
         }
     }
@@ -41,4 +50,11 @@
             screen.innerHTML = '' + Math.abs(screen.innerHTML);
         }
     };
+
+    // 小數點
+    var btnDot = $('dot');
+    btnDot.onclick = function () {
+        dotMode = true;
+    };
+
 })(document);
