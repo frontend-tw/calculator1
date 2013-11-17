@@ -21,4 +21,10 @@
             screen.innerHTML += this.innerHTML;
         }
     }
+
+    // 清除按鈕
+    var btnClear = $('clear');
+    btnClear.onclick = function () {
+        screen.innerHTML = '0';
+    };
 })(document);
