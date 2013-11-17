@@ -19,7 +19,7 @@
 ## 開發用工具
 
 * Firefox - Firebug
-* Chrome - Developer Tool
+* Chrome - Developer Tools
 
 ## 定義變數
 
