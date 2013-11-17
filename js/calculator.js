@@ -26,8 +26,9 @@
             if (dotMode) {
                 screen.innerHTML += '.';
             }
-            
+
             screen.innerHTML += this.innerHTML;
+            dotMode = false;
         }
     }
 
