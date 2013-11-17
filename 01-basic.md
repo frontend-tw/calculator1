@@ -36,13 +36,13 @@
 
 定義函式的兩種方式：
 
-可以在要執行的程式碼後再定義。
+有名函式，可以在要執行的程式碼後再定義。
 
     function funcName() {
         return result;
     }
 
-定義後才可以被呼叫。
+指定匿名函式給變數，定義後才可以被呼叫。
 
     var funcName = function () {
         return result;
@@ -51,8 +51,6 @@
 呼叫：
 
     funcName();
-
-匿名函式。
 
 ## 好習慣
 
