@@ -1,6 +1,8 @@
 (function (d) {
     var dotMode = false;
     var hasDot = false;
+    var num1 = 0;
+    var mathOp = '';
 
     var $ = function (id) {
         return d.getElementById(id);
@@ -62,6 +64,14 @@
             dotMode = true;
         }
         hasDot = true;
+    };
+
+    // 加法
+    var btnMathAdd = $('math-add');
+    btnMathAdd.onclick = function () {
+        num1 = parseInt(screen.innerHTML, 10);
+        mathOp = '+';
+        btnClear.onclick();
     };
 
 })(document);
