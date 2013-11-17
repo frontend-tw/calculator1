@@ -27,4 +27,18 @@
     btnClear.onclick = function () {
         screen.innerHTML = '0';
     };
+
+    // 正負號
+    var btnSign = $('sign');
+    btnSign.onclick = function () {
+        if (screen.innerHTML === '0') {
+            return false;
+        }
+
+        if (screen.innerHTML.indexOf('-') === -1) {
+            screen.innerHTML = '-' + screen.innerHTML;
+        } else {
+            screen.innerHTML = '' + Math.abs(screen.innerHTML);
+        }
+    };
 })(document);
