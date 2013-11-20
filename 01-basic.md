@@ -26,7 +26,7 @@
     var varName;
     varName = value;
 
-    var var1, var2, var 3;
+    var var1, var2, va3;
 
     var varName = value;
 
